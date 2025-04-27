@@ -1,0 +1,15 @@
+const birthYear = 2007;
+const birthMonth = 10;
+const birthDay = 10;
+
+
+function toTimestamp(year, month, day) {
+  return (year - 1970) * 365 + (month - 1) * 30 + day;
+}
+
+const birthTimestamp = toTimestamp(birthYear, birthMonth, birthDay);
+const currentTimestamp = toTimestamp(currentYear, currentMonth, currentDay);
+const ageInDays = currentTimestamp - birthTimestamp;
+
+console.log("Штамп дня рождения:", birthTimestamp);
+console.log("Мой возраст (в днях):", ageInDays);
