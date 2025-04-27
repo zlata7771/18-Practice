@@ -1,0 +1,15 @@
+function isAnniversaryThisYear(birthYear, anniversaryInterval) {
+    const currentYear = new Date().getFullYear();
+    const yearsPassed = currentYear - birthYear;
+    
+    return yearsPassed % anniversaryInterval === 0;
+}
+
+const birthYear = 2007; 
+const anniversaryInterval = 5; 
+
+if (isAnniversaryThisYear(birthYear, anniversaryInterval)) {
+    console.log(`В этом году у вас юбилей!`);
+} else {
+    console.log(`В этом году юбилея нет.`);
+}
