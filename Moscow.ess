@@ -1,0 +1,9 @@
+const utcTimestamp = currentTimestamp;  
+const moscowTimestamp = utcTimestamp + 3 * 24;  
+
+console.log("UTC штамп:", utcTimestamp);
+console.log("Московское время:", moscowTimestamp);const utcTimestamp = currentTimestamp;  
+const moscowTimestamp = utcTimestamp + 3 * 24;  
+
+console.log("UTC штамп:", utcTimestamp);
+console.log("Московское время:", moscowTimestamp);
